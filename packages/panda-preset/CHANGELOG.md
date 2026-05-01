@@ -1,5 +1,7 @@
 # @chakra-ui/panda-preset
 
+## 3.35.1
+
 ## 3.35.0
 
 ### Patch Changes

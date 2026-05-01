@@ -1,5 +1,32 @@
 # @chakra-ui/react
 
+## 3.35.1
+
+### Patch Changes
+
+- [`1bbdd86`](https://github.com/chakra-ui/chakra-ui/commit/1bbdd8608cbd6b5c1b34b1eea3b1989b8a1dd6b4)
+  Thanks [@segunadebayo](https://github.com/segunadebayo)! - Fix recipe
+  definition types so `defaultVariants` accepts variant keys when using the
+  broad `RecipeDefinition` type.
+
+- [#10799](https://github.com/chakra-ui/chakra-ui/pull/10799)
+  [`7a97cf9`](https://github.com/chakra-ui/chakra-ui/commit/7a97cf9f359373ca577374881ba2c6ba6770cebe)
+  Thanks [@cyphercodes](https://github.com/cyphercodes)! - Fix token dictionary
+  lookups to preserve semantic token condition metadata when using `getByName`.
+
+- [#10801](https://github.com/chakra-ui/chakra-ui/pull/10801)
+  [`27e0489`](https://github.com/chakra-ui/chakra-ui/commit/27e048996062c642c3b7417879fe299ca266eef2)
+  Thanks [@doz13189](https://github.com/doz13189)! - Fix: normalize nested token
+  overrides when merging default theme
+
+  When merging a custom token into the default theme, token normalization could
+  stop at the category level (for example `colors`) and prevent promoting flat
+  tokens to `DEFAULT`. This change updates the merge logic so adding nested
+  overrides like `colors.black.100` correctly moves the original `colors.black`
+  value to `DEFAULT` and resolves nested tokens.
+
+  Fixes: [#10800](https://github.com/chakra-ui/chakra-ui/issues/10800)
+
 ## 3.35.0
 
 ### Minor Changes
